@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <title>Máquina de Vendas</title>
+    </head>
+    <body>
+        <div class="maquina centralizar">
+            <div class="topo centralizar">
+                <h1>Maquina de Vendas</h1>
+            </div>
+            <div class="tresColunas">
+                <div id="produtos" class="produtos">
+                </div>
+                <div class="quantidade centralizar">
+                    <h1>Produto Selecionado</h1>
+                    <button class="mais chevron"><img class="chevron" src="Imagens/chevron.png"></button>
+                        <div class="quadrado centralizar">
+                            <p class="produtoSelecionado"></p>
+                        </div>
+                    <button class="menos chevron"><img class="chevron inverter" src="Imagens/chevron.png"></button>
+                    <button class="botoes">COMPRAR</button>
+                </div>
+                <div class="controles centralizar">
+                    <div class="centralizar">
+                        <h1>Saldo</h1>
+                        <span id="display" class="saldo"></span>
+                        <h1>Depositar</h1>
+                        <p id="display" class="deposito"></p>
+                    </div>
+                    <div class="teclado">
+                        <button class="btn" onclick="clickNoTeclado(1)">1</button>
+                        <button class="btn" onclick="clickNoTeclado(2)">2</button>
+                        <button class="btn" onclick="clickNoTeclado(3)">3</button>
+                        <button class="btn" onclick="clickNoTeclado(4)">4</button>
+                        <button class="btn" onclick="clickNoTeclado(5)">5</button>
+                        <button class="btn" onclick="clickNoTeclado(6)">6</button>
+                        <button class="btn" onclick="clickNoTeclado(7)">7</button>
+                        <button class="btn" onclick="clickNoTeclado(8)">8</button>
+                        <button class="btn" onclick="clickNoTeclado(9)">9</button>
+                        <button class="btn" onclick="deletar()"><img class="backspace" src="Imagens/backspace.png"></button>
+                        <button class="btn" onclick="clickNoTeclado(0)">0</button>
+                        <button class="confirma">Confirmar</button>
+                    </div>
+                    <button class="botoes" onclick="retirarDinheiro()">Retirar Dinheiro</button>
+                </div>
+            </div>
+        </div>
+        <script src="produtos.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
